@@ -1,5 +1,7 @@
 # Divulga Tudo
 
+**O código está em desenvolvimento e certamente deverá ser refatorado.**
+
 ## O problema
 
 A agência **Divulga Tudo** precisa de um programa para gerenciar os seus anúncios online. O objetivo dos anúncios faz parte de uma campanha nas redes sociais. O sistema de gerenciamento permitirá a gestão do anúncio e o rastreio dos resultados da campanha.
