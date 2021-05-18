@@ -5,31 +5,32 @@ def criar_anuncio
         Criardor de Anúncios
   --------------------------------------
   '
-  # recebendo dados do anucio
+  # recebendo dados do anuncio
   print ' Informe o nome do cliente.......: '
   nome_do_cliente = gets.chomp.capitalize
 
   print ' Informe o nome da campanha......: '
   nome_do_anuncio = gets.chomp.capitalize
 
-  print ' Data de inicio (ex. 29072021)...: '
+  print ' Data de início (ex. 29072021)...: '
   data_inicio = gets.chomp
   data_inicio = calendario(data_inicio)
 
-  print ' Data de fim (ex. 29082021)......: '
+  print ' Data do término (ex. 29082021)..: '
   data_do_termino = gets.chomp
   data_do_termino = calendario(data_do_termino)
 
-  print ' Informe o investimento diario...: '
+  print ' Informe o investimento diário...: '
   investimento_por_dia = gets.chomp.to_f
 
+  # Exibindo os dados recebidos
   puts "
   ----- Dados do Anúncio - #{nome_do_anuncio} -----
   Cliente             - #{nome_do_cliente}
   Campanha            - #{nome_do_anuncio}
-  Data de inicio      - #{data_inicio}
-  Data de termino     - #{data_do_termino}
-  Investimento diario - R$ #{investimento_por_dia}
+  Data de início      - #{data_inicio}
+  Data de término     - #{data_do_termino}
+  Investimento diário - R$ #{investimento_por_dia}
   --------------------------------------
   "
   print ' Voltar para o menu? [S/n]: '
@@ -41,13 +42,13 @@ def criar_anuncio
   end
 end
 
-# Calcula anuncios por data de inicio, data de fim e valor aunicio
+# Calcula anuncios por data de início, data de fim e valor anúncio
 def calcular_anuncio
   system("clear")
   puts 'Calcular'
 end
 
-
+# celendario criado para manipular as datas
 def calendario(data)
   dia = data[0..1].to_i
   mes = data[2..3].to_i
