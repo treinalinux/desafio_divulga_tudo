@@ -13,8 +13,8 @@ def criar_anuncio
   nome_do_anuncio = gets.chomp.capitalize
 
   print ' Data de início (ex. 29072021)...: '
-  data_inicio = gets.chomp
-  data_inicio = calendario(data_inicio)
+  data_de_inicio = gets.chomp
+  data_de_inicio = calendario(data_de_inicio)
 
   print ' Data do término (ex. 29082021)..: '
   data_do_termino = gets.chomp
@@ -28,7 +28,7 @@ def criar_anuncio
   ----- Dados do Anúncio - #{nome_do_anuncio} -----
   Cliente             - #{nome_do_cliente}
   Campanha            - #{nome_do_anuncio}
-  Data de início      - #{data_inicio}
+  Data de início      - #{data_de_inicio}
   Data de término     - #{data_do_termino}
   Investimento diário - R$ #{investimento_por_dia}
   --------------------------------------
